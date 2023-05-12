@@ -1,5 +1,6 @@
 #importando bibliotecas e módulos
 from sqlalchemy import create_engine, text
+import psycopg2
 import pandas as pd
 from datetime import datetime
 import requests
