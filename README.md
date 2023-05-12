@@ -2,8 +2,11 @@
 Teste para vaga de Engenheiro de Analytics na BRAVIUM
 
 As etapas para construção do case foram iniciadas com a criação de uma imagem em `DOCKER`;
-Criei um arquivo `.html` e um `dockerfile` contendo a imagem, criei o servidor/repositório, depois criei um `docker-compose` contendo o meu banco `PostegrSQL` 
-e fiz a conexão com o banco pelo `Dbeaver`.
+
+
+
+Criei um arquivo `.html` e um `dockerfile` contendo a imagem, criei o servidor/repositório, depois criei um `docker-compose` contendo a conexão com o meu banco 
+e fiz a conexão com o mesmo pelo `Dbeaver`.
 
 Dentro do `DBeaver`, manipulei meu banco, criando a tabela `Netflix` que recebe o `.csv` do desafio.
 Crio as tabelas, o código se encontra no script `SQL` : `Script_Netflix.sql`.
@@ -16,43 +19,6 @@ Onde utilizo das bibliotecas `sqlalchemy + psycopg2` para fazer a conexão com o
 
 No arquivo `main.py`eu consigo manipular meu banco para conseguir conectar a `API` de classificação de gênero, e faço o looping para rodar em todos os dados inseridos nas tabelas.
 
-
-##Passo 4##
-
---valores faltantes
-`SELECT *
-FROM netflix
-WHERE show_id IS NULL
-	OR "type" IS NULL
-	OR title IS NULL
-	OR director IS NULL
-	OR "cast" IS NULL
-	OR country IS NULL
-	OR date_added IS NULL
-	OR release_year IS NULL
-	OR rating IS NULL
-	OR duration IS NULL
-	OR listed_in IS NULL
-	OR description IS null
-;`
-
---total de valores válidos (sem erros e/ou faltantes em cada coluna)
-`SELECT
-COUNT(*) AS total_rows,
-COUNT(NULLIF(TRIM(show_id), '')) AS valid_show_id,
-COUNT(NULLIF(TRIM("type"), '')) AS valid_type,
-COUNT(NULLIF(TRIM(title), '')) AS valid_title,
-COUNT(NULLIF(TRIM(director), '')) AS valid_director,
-COUNT(NULLIF(TRIM("cast"), '')) AS valid_cast,
-COUNT(NULLIF(TRIM(country), '')) AS valid_country,
-COUNT(NULLIF(TRIM(to_char(date_added, 'YYYY-MM-DD'))::text, '')) AS valid_date_added,
-COUNT(NULLIF(TRIM(to_char(release_year, 'YYYY'))::text, '')) AS valid_release_year,
-COUNT(NULLIF(TRIM(rating), '')) AS valid_rating,
-COUNT(NULLIF(TRIM(duration), '')) AS valid_duration,
-COUNT(NULLIF(TRIM(listed_in), '')) AS valid_listed_in,
-COUNT(NULLIF(TRIM(description), '')) AS valid_description
-FROM netflix
-;`
 
 ##Passo 5##:
 
