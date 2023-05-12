@@ -5,7 +5,8 @@ As etapas para construção do case foram:
 
 Criei um arquivo `.html`, um `dockerfile` e um `docker-compose` contendo a conexão com o meu banco PostgreSQL; a conexão foi conectada pelo `Dbeaver`.
 
-Dentro do `DBeaver`, manipulei meu banco, criando a tabela `Netflix` que recebe o `.csv` do desafio.
+Dentro do `DBeaver`, manipulei meu banco, criando a tabela `Netflix` que recebe o `.csv` do desafio. Executei a inserção pelo modo rápido do aplicativo.
+Botão direito na tabela, "importar dados" --> "colocar o .csv" --> "verificar as colunas" e finalizar.
 
 Crio também outras duas tabelas, uma tabela contendo os valores do elenco e direção dos filmes/séries, e uma tabela intermediária
 com os Ids (chaves) das duas tabelas.
