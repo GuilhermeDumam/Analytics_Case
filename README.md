@@ -35,8 +35,6 @@ Qual ano teve o maior aumento ano sobre ano (em termos percentuais) para program
 Liste as atrizes que apareceram em um filme com Woody Harrelson mais de uma vez.
 ??????
 
-Não consegui completar a lógica para rodar a API em todos os valores.
-
 Passo 6: Combine todos os passos anteriores em um programa Python sólido que tenha teste unitário. Sinta-se à vontade para criar um arquivo principal que possa ser executado via linha de comando do Python.
 
 Não consegui realizar a tempo `pytest` ou `unittest`. 
