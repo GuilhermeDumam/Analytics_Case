@@ -57,16 +57,23 @@ FROM netflix
 ##Passo 5##:
 
 Qual é o nome mais comum entre atores e atrizes?
-![image](https://github.com/GuilhermeDumam/Analytics_Case/assets/72059691/76e7b9c3-c638-4257-be3e-43a41851a17d)
+Anupam Kher
 
 Qual filme teve o maior intervalo de tempo desde o lançamento até aparecer na Netflix?
-![image](https://github.com/GuilhermeDumam/Analytics_Case/assets/72059691/27a3cf83-3f2c-4be7-a984-ba814a5367bd)
+A Young Doctor's Notebook and Other Stories
 
 Qual mês do ano teve mais novos lançamentos historicamente?
-![image](https://github.com/GuilhermeDumam/Analytics_Case/assets/72059691/ea8cd356-7686-44a7-af31-9c9b6c37ae6b)
+12 (Dezembro)
 
 Qual ano teve o maior aumento ano sobre ano (em termos percentuais) para programas de TV?
-![image](https://github.com/GuilhermeDumam/Analytics_Case/assets/72059691/6873d5c6-0f3a-476e-8e42-795b14c21b37)
+2016
 
+Liste as atrizes que apareceram em um filme com Woody Harrelson mais de uma vez.
+??????
 
+Não consegui completar a lógica para rodar a API em todos os valores.
+
+Passo 6: Combine todos os passos anteriores em um programa Python sólido que tenha teste unitário. Sinta-se à vontade para criar um arquivo principal que possa ser executado via linha de comando do Python.
+
+Não consegui realizar a tempo `pytest` ou `unittest`. 
 
