@@ -1,18 +1,16 @@
 # Analytics_Case
 Teste para vaga de Engenheiro de Analytics na BRAVIUM
 
-As etapas para construção do case foram iniciadas com a criação de uma imagem em `DOCKER`;
+As etapas para construção do case foram:
 
-
-
-Criei um arquivo `.html` e um `dockerfile` contendo a imagem, criei o servidor/repositório, depois criei um `docker-compose` contendo a conexão com o meu banco 
-e fiz a conexão com o mesmo pelo `Dbeaver`.
+Criei um arquivo `.html`, um `dockerfile` e um `docker-compose` contendo a conexão com o meu banco PostgreSQL; a conexão foi conectada pelo `Dbeaver`.
 
 Dentro do `DBeaver`, manipulei meu banco, criando a tabela `Netflix` que recebe o `.csv` do desafio.
-Crio as tabelas, o código se encontra no script `SQL` : `Script_Netflix.sql`.
+
 Crio também outras duas tabelas, uma tabela contendo os valores do elenco e direção dos filmes/séries, e uma tabela intermediária
-com os Ids das duas tabelas.
-Precisei criar essas tabelas adicionais, pois para classificar os gêneros do elenco, precisava separar da tabela `netflix` onde os nomes estavam aglomerados.
+com os Ids (chaves) das duas tabelas.
+
+Precisei criar essas tabelas adicionais, pois para classificar os gêneros do elenco, precisava separar da tabela `netflix` onde os nomes do elenco estavam aglomerados em apenas uma coluna, seria difícil da API conseguir classificar os gêneros pelos nomes todos juntos.
 
 Vou criando os scripts para resolução das perguntas do desafio e ao mesmo tempo colocando eles para rodarem no meu arquivo `main.py`.
 Onde utilizo das bibliotecas `sqlalchemy + psycopg2` para fazer a conexão com o banco.
