@@ -20,7 +20,7 @@ No arquivo `main.py`eu consigo manipular meu banco para conseguir conectar a `AP
 ##Passo 4##
 
 --valores faltantes
-SELECT *
+`SELECT *
 FROM netflix
 WHERE show_id IS NULL
 	OR "type" IS NULL
@@ -34,10 +34,10 @@ WHERE show_id IS NULL
 	OR duration IS NULL
 	OR listed_in IS NULL
 	OR description IS null
-;
+;`
 
 --total de valores válidos (sem erros e/ou faltantes em cada coluna)
-SELECT
+`SELECT
 COUNT(*) AS total_rows,
 COUNT(NULLIF(TRIM(show_id), '')) AS valid_show_id,
 COUNT(NULLIF(TRIM("type"), '')) AS valid_type,
@@ -52,7 +52,7 @@ COUNT(NULLIF(TRIM(duration), '')) AS valid_duration,
 COUNT(NULLIF(TRIM(listed_in), '')) AS valid_listed_in,
 COUNT(NULLIF(TRIM(description), '')) AS valid_description
 FROM netflix
-;
+;`
 
 ##Passo 5##:
 
